@@ -1,0 +1,109 @@
+/* ===== CONTACT SECTION ===== */
+.contact {
+  padding: var(--spacing-24) 0;
+  background: var(--white);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-12);
+  align-items: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.contact-item {
+  text-align: center;
+  padding: var(--spacing-6);
+  background: var(--gray-50);
+  border-radius: var(--border-radius-xl);
+  transition: all var(--transition-normal);
+}
+
+.contact-item:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-item i {
+  font-size: var(--font-size-2xl);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-3);
+  transition: color var(--transition-normal);
+}
+
+.contact-item:hover i {
+  color: var(--white);
+}
+
+.contact-item h3 {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-2);
+  color: var(--gray-900);
+  transition: color var(--transition-normal);
+}
+
+.contact-item:hover h3 {
+  color: var(--white);
+}
+
+.contact-item p {
+  color: var(--gray-600);
+  transition: color var(--transition-normal);
+}
+
+.contact-item:hover p {
+  color: var(--white);
+}
+
+.contact-form {
+  background: var(--gray-50);
+  padding: var(--spacing-8);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-6);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-2);
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: var(--spacing-3);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--border-radius);
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  transition: all var(--transition-normal);
+  background: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}

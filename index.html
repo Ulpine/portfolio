@@ -1,64 +1,436 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile</title>
-  <link rel="stylesheet" href="./stylesheets/styles.css">
-  <script src="./javascript/index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Développeur spécialisé dans la création de sites vitrines modernes pour auto-entrepreneurs, TPE et PME. Design professionnel, SEO optimisé et hébergement inclus.">
+    <meta name="keywords" content="développeur web, site vitrine, création site internet, TPE, PME, auto-entrepreneur, SEO, design moderne">
+    <meta name="author" content="Votre Nom">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Développeur Web - Sites Vitrines Professionnels">
+    <meta property="og:description" content="Création de sites vitrines modernes et optimisés pour votre entreprise. Design professionnel, SEO inclus.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-domaine.com">
+    <meta property="og:image" content="https://votre-domaine.com/preview.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Développeur Web - Sites Vitrines Professionnels">
+    <meta name="twitter:description" content="Création de sites vitrines modernes et optimisés pour votre entreprise.">
+
+    <title>Développeur Web - Sites Vitrines Professionnels | Votre Partenaire Digital</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-        <nav>
-            <div class="logo">L</div>
-            <a href="#contact" class="contact-btn">Me Contacter</a>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>DevWeb</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Je m'appelle<br>Léo</h1>
-                <p>Je suis un développeur de site internet</p>
-                <a href="#contact" class="hire-btn">Contactez-moi</a>
-                <div class="skills">
-                    <span class="skill-tag orange">HTML</span>
-                    <span class="skill-tag orange">CSS</span>
-                    <span class="skill-tag dark">Ruby on Rails</span>
-                    <span class="skill-tag dark">JavaScript</span>
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Votre Site Web</span>
+                    <br>Professionnel
+                </h1>
+                <p class="hero-subtitle">
+                    Je transforme votre vision en réalité digitale.
+                    Développeur spécialisé dans la création de sites vitrines
+                    modernes et performants pour TPE, PME et auto-entrepreneurs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Voir mes réalisations</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="./images/profile.JPG" alt="Photo de profil">
-                <div class="experience-badge">
-
+            <div class="hero-visual">
+                <div class="code-animation">
+                    <div class="code-line">
+                        <span class="code-tag">&lt;html&gt;</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="code-indent">  </span><span class="code-tag">&lt;body&gt;</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="code-indent">    </span><span class="code-tag">&lt;h1&gt;</span><span class="code-text">Votre Succès</span><span class="code-tag">&lt;/h1&gt;</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="code-indent">  </span><span class="code-tag">&lt;/body&gt;</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="code-tag">&lt;/html&gt;</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="projects">
-            <div class="projects-header">
-                <h2>Derniers Projets</h2>
-                <a href="#all-projects" class="dark">Tous les projets</a>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que je propose</h2>
+                <p>Des solutions complètes pour votre présence en ligne</p>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="./images/capturepoteriecreations.PNG" alt="Space Age 60">
-                    <div class="project-number">01</div>
-                </div>
-                <div class="project-card">
-                    <img src="./images/sportify-logo.jpg" alt="AMC for App">
-                    <div class="project-number">02</div>
-                </div>
-                <div class="project-card">
-                    <img src="./images/logotymouet.png" alt="Doremus">
-                    <div class="project-number">03</div>
-                </div>
-            </div>
-        </section>
-    </main>
-</div>
 
+            <div class="services-grid">
+                <div class="service-bubble central-bubble">
+                    <div class="bubble-content">
+                        <i class="fas fa-globe"></i>
+                        <h3>Sites Vitrines</h3>
+                        <p>Professionnels & Modernes</p>
+                    </div>
+                </div>
+
+                <div class="service-bubble">
+                    <div class="bubble-content">
+                        <i class="fas fa-code"></i>
+                        <h4>Création sur mesure</h4>
+                        <p>One page ou multi-pages selon vos besoins</p>
+                    </div>
+                </div>
+
+                <div class="service-bubble">
+                    <div class="bubble-content">
+                        <i class="fas fa-search"></i>
+                        <h4>SEO Optimisé</h4>
+                        <p>Référencement naturel intégré</p>
+                    </div>
+                </div>
+
+                <div class="service-bubble">
+                    <div class="bubble-content">
+                        <i class="fas fa-comments"></i>
+                        <h4>Écoute client</h4>
+                        <p>Aller-retours jusqu'à satisfaction complète</p>
+                    </div>
+                </div>
+
+                <div class="service-bubble">
+                    <div class="bubble-content">
+                        <i class="fab fa-github"></i>
+                        <h4>Hébergement</h4>
+                        <p>Sur GitHub Pages, fiable et rapide</p>
+                    </div>
+                </div>
+
+                <div class="service-bubble">
+                    <div class="bubble-content">
+                        <i class="fas fa-edit"></i>
+                        <h4>Support continu</h4>
+                        <p>Modifications post-mise en ligne</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-info">
+                <div class="pricing-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Tarification</h3>
+                    <p><strong>Création de site :</strong> Tarif sur devis personnalisé</p>
+                    <p><strong>Modifications :</strong> Support post-lancement disponible</p>
+                    <a href="#contact" class="btn btn-primary">Demander un devis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mes Réalisations</h2>
+                <p>Découvrez quelques-uns de mes projets récents</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="Site Restaurant La Bella Vista">
+                        <div class="portfolio-overlay">
+                            <h3>Restaurant La Bella Vista</h3>
+                            <p>Site vitrine avec menu interactif et réservations en ligne</p>
+                            <a href="#" target="_blank" class="portfolio-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=500&h=300&fit=crop" alt="Cabinet Dentaire Sourire">
+                        <div class="portfolio-overlay">
+                            <h3>Cabinet Dentaire Sourire</h3>
+                            <p>Site professionnel avec prise de rendez-vous intégrée</p>
+                            <a href="#" target="_blank" class="portfolio-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop" alt="Boutique Mode Élégance">
+                        <div class="portfolio-overlay">
+                            <h3>Boutique Mode Élégance</h3>
+                            <p>E-commerce moderne avec galerie photo interactive</p>
+                            <a href="#" target="_blank" class="portfolio-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&h=300&fit=crop" alt="Coach Fitness Pro">
+                        <div class="portfolio-overlay">
+                            <h3>Coach Fitness Pro</h3>
+                            <p>Site personnel avec blog et programmes d'entraînement</p>
+                            <a href="#" target="_blank" class="portfolio-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop" alt="Agence Immobilière Prestige">
+                        <div class="portfolio-overlay">
+                            <h3>Agence Immobilière Prestige</h3>
+                            <p>Plateforme immobilière avec recherche avancée</p>
+                            <a href="#" target="_blank" class="portfolio-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions Fréquentes</h2>
+                <p>Tout ce que vous devez savoir sur mes services</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Combien de temps faut-il pour créer un site vitrine ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>En général, un site vitrine est livré entre 1 et 3 semaines selon la complexité du projet. Je m'adapte à vos délais et vous tiens informé tout au long du processus.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous des modifications après la mise en ligne ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument ! Je propose un service de maintenance et de modifications post-lancement. Les tarifs sont établis selon la nature des modifications demandées.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Mon site sera-t-il responsive (mobile, tablette) ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, tous mes sites sont conçus en "mobile first" et s'adaptent parfaitement à tous les écrans : smartphones, tablettes et ordinateurs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qu'est-ce qui est inclus dans le prix ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le prix comprend : la création du site, l'optimisation SEO, l'hébergement sur GitHub Pages, les révisions pendant la conception, et la formation pour les mises à jour basiques.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Travaillez-vous avec des auto-entrepreneurs ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bien sûr ! Je travaille avec des auto-entrepreneurs, des TPE et des PME. J'adapte mes solutions et mes tarifs à votre budget et vos besoins spécifiques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-moi</h2>
+                <p>Prêt à donner vie à votre projet ? Parlons-en !</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>contact@votre-nom.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Téléphone</h3>
+                        <p>+33 6 XX XX XX XX</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Localisation</h3>
+                        <p>France - Télétravail</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" name="subject">
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="devis">Demande de devis</option>
+                            <option value="info">Demande d'information</option>
+                            <option value="maintenance">Maintenance de site</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>DevWeb</span>
+                    </div>
+                    <p>Développeur web spécialisé dans la création de sites vitrines modernes et performants.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Création de sites</a></li>
+                        <li><a href="#services">Optimisation SEO</a></li>
+                        <li><a href="#services">Hébergement</a></li>
+                        <li><a href="#services">Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@votre-nom.com</li>
+                        <li><i class="fas fa-phone"></i> +33 6 XX XX XX XX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> France</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p>&copy; 2024 DevWeb. Tous droits réservés. | <a href="#" class="footer-link">Mentions légales</a> | <a href="#" class="footer-link">Politique de confidentialité</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript - ORDRE IMPORTANT -->
+
+    <!-- 1. Utilitaires en premier -->
+    <script src="js/modules/utils.js"></script>
+
+    <!-- 2. Styles dynamiques -->
+    <script src="js/modules/styles.js"></script>
+
+    <!-- 3. Modules fonctionnels -->
+    <script src="js/modules/navigation.js"></script>
+    <script src="js/modules/faq.js"></script>
+    <script src="js/modules/contact-form.js"></script>
+    <script src="js/modules/animations.js"></script>
+    <script src="js/modules/performance.js"></script>
+
+    <!-- 4. Fichier principal en dernier -->
+    <script src="js/main.js"></script>
 </body>
 </html>
